@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.cdnfonts.com/css/collonar-cap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg, rgb(34, 42, 71),rgba(5, 68, 66, 0.582));
+}
+
+.hero{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, rgba(27, 92, 18, 0.774) 0%, rgb(27, 92, 18) 2%,rgba(28, 82, 45, 0.726) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgb(30, 61, 98) 96%,rgb(31, 51, 125) 96%, rgb(31, 51, 125) 100%),linear-gradient(0deg, rgb(27, 92, 18) 0%, rgb(27, 92, 18) 2%,rgb(28, 82, 45) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgb(30, 61, 98) 96%,rgba(31, 51, 125, 0.185) 96%, rgba(31, 51, 125, 0.336) 100%),linear-gradient(135deg, rgb(27, 92, 18) 0%, rgb(27, 92, 18) 2%,rgb(28, 82, 45) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgba(30, 61, 98, 0.301) 96%,rgba(31, 51, 125, 0.479) 96%, rgba(31, 51, 125, 0.151) 100%),linear-gradient(90deg, rgb(186, 19, 165),rgba(19, 126, 241, 0.486)); background-blend-mode:overlay,overlay,overlay,normal;
+    text-align: center;
+}
+
+h1{
+    margin-top: 70px;
+    color: rgba(13, 230, 158, 0.801);
+    font-size: 120px;
+    font-family: 'COLLONAR CAP', sans-serif;
+    filter: drop-shadow(10px 8px 2px rgba(3, 68, 38, 0.829));
+    animation-name: aparecer-desaparecer; /* Nombre de la animación */
+    animation-duration: 2s; /* Duración de la animación */
+    animation-iteration-count: infinite; /* Repetir infinitamente */
+    animation-timing-function: ease-in-out; /* La animación acelera y desacelera suavemente */
+}
+
+/* Define la animación */
+@keyframes aparecer-desaparecer {
+    0% {
+      opacity: 0; /* Empieza completamente transparente */
+    }
+    50% {
+      opacity: 1; /* Aparece en el 50% de la animación */
+    }
+    100% {
+      opacity: 0; /* Desaparece al final de la animación */
+    }
+  }
+
+.container{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(90deg, rgba(130, 114, 43, 0.247),rgb(40, 144, 172));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+ 
+.listas{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    filter: drop-shadow(6px 6px 2px black);
+}
+
+.btn button{
+    margin-left: 20px;
+    font-size: 25px;
+    filter: drop-shadow(6px 6px 2px black);
+    color: rgb(17, 15, 16);
+    padding: 5px 25px;
+    border: 1px solid black;
+    border-radius: 70%;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.btn button:hover{
+    transform: scale(1.5);
+    color: rgb(12, 248, 12);
+    background-color: rgba(0, 0, 0, 0.788);
+    text-transform: uppercase;
+    border: 1px dashed rgba(255, 255, 0, 0.733);
+}
+
+.menu{
+    text-decoration: none;
+    color: rgb(72, 104, 8);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aqua;
+    margin: 20px;
+    padding: 5px 25px;
+    background-image: linear-gradient(135deg, rgb(68, 202, 201) 0%,rgb(252, 255, 114) 100%);
+}
+
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+section{
+    width: 200px;
+    height: 250px;
+    background-image: linear-gradient(200deg, rgba(26, 224, 165, 0.767) 0%, rgba(171, 171, 171,0.05) 23%,rgba(90, 90, 90,0.05) 23%, rgba(90, 90, 90,0.05) 48%,rgba(65, 65, 65,0.05) 48%, rgba(65, 65, 65,0.05) 61%,rgba(232, 232, 232,0.05) 61%, rgba(232, 232, 232,0.05) 100%),linear-gradient(126deg, rgba(194, 194, 194,0.05) 0%, rgba(194, 194, 194,0.05) 11%,rgba(127, 127, 127,0.05) 11%, rgba(127, 127, 127,0.05) 33%,rgba(117, 117, 117,0.05) 33%, rgba(117, 117, 117,0.05) 99%,rgba(248, 248, 248,0.05) 99%, rgba(248, 248, 248,0.05) 100%),linear-gradient(144deg, rgba(64, 64, 64,0.05) 0%, rgba(64, 64, 64,0.05) 33%,rgba(211, 211, 211,0.05) 33%, rgba(211, 211, 211,0.05) 50%,rgba(53, 53, 53,0.05) 50%, rgba(53, 53, 53,0.05) 75%,rgba(144, 144, 144,0.05) 75%, rgba(144, 144, 144,0.05) 100%),linear-gradient(329deg, hsl(148,0%,0%),hsl(148,0%,0%));
+    border: 3px solid rgba(103, 105, 103, 0.603);
+    margin: 20px;
+    filter: drop-shadow(6px 6px 2px  rgba(0, 0, 0, 0.678));
+    border-radius: 15px;
+    transition: all 0.1s;
+}
+
+section:hover{
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 217, 0, 0.829);
+}
+
+img{
+    object-fit: contain;
+    margin-left: 25px;
+    width: 130px;
+    height: 145px;
+    filter: drop-shadow(5px 5px 2px gold);
+}
+
+
+h2{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    margin-top: 25px;
+    font-size: 20px;
+    color: rgb(44, 204, 44);
+    text-align: center;
+}
+
+.foot{
+    width: 100%;
+    border: 1px solid black;
+    background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+     
+}
+
+.fot{
+    justify-content: space-around;
+    align-items: flex-end;
+    display: flex;
+}
+
+i{
+    font-size: 50px;
+    color: green;
+    transition: all 1.0s;  
+    margin-top: 5px 
+}
+
+i:hover{
+    transform: scale(1.3);  
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color: rgb(54, 182, 233);
+}
+
+.fa-instagram{
+    color: rgb(235, 62, 91);
+}
+
+.cohete{
+    width: 180px;
+    height: 190px;
+    filter: drop-shadow(4px 6px 4px black);
+    margin-bottom: 30%;
+    transition: all 1.0s;
+}
+
+.cohete:hover{
+    transform: scale(1.1);
+}
+
+h4{
+    font-size: 40px;
+    color: rgba(27, 250, 146, 0.808);
+    filter: drop-shadow(2px 2px 2px rgba(7, 0, 0, 0.986));
+    text-align: center;
+    margin-bottom: 50%;
+}
